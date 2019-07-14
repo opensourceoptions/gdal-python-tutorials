@@ -1,7 +1,7 @@
 import gdal
 
-fn = "C:/konrad/temp/test.tif" #new raster
-fn_template = "C:/konrad/temp/elevation/ned10m.tif" #template raster
+fn = "C:/temp/test.tif" #new raster
+fn_template = "C:/temp/elevation/ned10m.tif" #template raster
 
 ds_temp = gdal.Open(fn_template) #open template raster
 driver_tiff = gdal.GetDriverByName("Gtiff") #Get geotiff driver
